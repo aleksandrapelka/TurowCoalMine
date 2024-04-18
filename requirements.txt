@@ -1,0 +1,6 @@
+ee
+geemap
+geopandas
+leafmap
+streamlit
+streamlit-option-menu
