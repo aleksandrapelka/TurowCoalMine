@@ -2,6 +2,7 @@ import ee
 import geemap.foliumap as geemap
 import streamlit as st
 import pandas as pd
+from io import StringIO
 
 # STATISTICS DATA
 daily = pd.read_csv('data/daily_statistics_raw.csv')
