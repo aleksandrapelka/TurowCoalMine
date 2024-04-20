@@ -1,4 +1,6 @@
 import ee
+import geemap.folium as geemap
+import streamlit as st
 import pandas as pd
 
 # STATISTICS DATA
@@ -22,7 +24,12 @@ def get_statistics_data(index_name):
 
 
 # SPATIAL DATA
-ee.Initialize()
+@st.cache_data
+def ee_authenticate(token_name="EARTHENGINE_TOKEN"):
+    geemap.ee_initialize(token_name=token_name)
+
+
+ee_authenticate(token_name="EARTHENGINE_TOKEN")
 
 selected_units = ee.FeatureCollection('users/aleksandra_pelka/selected_units')
 
