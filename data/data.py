@@ -1,5 +1,5 @@
 import ee
-import geemap.folium as geemap
+import geemap.foliumap as geemap
 import streamlit as st
 import pandas as pd
 
