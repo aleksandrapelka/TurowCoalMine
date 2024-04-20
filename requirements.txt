@@ -4,4 +4,3 @@ geopandas
 leafmap
 streamlit
 streamlit-option-menu
-StringIO
