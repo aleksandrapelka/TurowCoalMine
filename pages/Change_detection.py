@@ -2,7 +2,7 @@ import streamlit as st
 from data.data import get_statistics_data, get_imagery_collections
 from maps.indexes import get_image, classify_image, add_image_to_map, detect_chages
 from maps.charts import create_pie_chart
-
+from io import StringIO
 
 st.set_page_config(page_title="Change detection", page_icon="💧", layout="wide")
 
