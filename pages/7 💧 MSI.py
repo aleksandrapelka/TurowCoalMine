@@ -2,7 +2,7 @@ import streamlit as st
 from maps.indexes import add_image_to_map, get_classified_image
 from maps.charts import create_line_chart, create_multi_year_chart, create_histogram, create_multi_year_histogram, multi_histogram
 from data.data import get_statistics_data, get_imagery_collections, daily_multihist, weekly_multihist, monthly_multihist
-
+from io import StringIO
 
 st.set_page_config(page_title="MSI", page_icon="💧", layout="wide")
 index = 'MSI'
