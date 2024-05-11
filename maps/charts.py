@@ -6,7 +6,7 @@ import plotly.express as px
 import data.data as data
 from maps.indexes import get_image, projection
 from maps.visualization import get_breaks, get_palette, get_labels
-from io import StringIO
+
 
 def create_line_chart(index_name, data, series_name):
    fig = px.line(data, x='Date', y=[f'{index_name}_mean', f'{index_name}_median', f'{index_name}_mode'], markers=True, color_discrete_sequence=get_palette()['line_chart'])
