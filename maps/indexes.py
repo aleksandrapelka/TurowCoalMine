@@ -2,7 +2,7 @@ import ee
 import geemap.foliumap as geemap
 from maps.visualization import get_vis_params, get_breaks, get_labels, get_palette
 import data.data as data
-from io import StringIO
+
 
 projection = {'crs': 'EPSG:32633', 'transform': [10, 0, 399960, 0, -10, 5600040]}
 
