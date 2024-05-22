@@ -1,3 +1,4 @@
+import ee
 import streamlit as st
 from maps.indexes import add_image_to_map, get_classified_image
 from maps.charts import create_line_chart, create_multi_year_chart, create_histogram, create_multi_year_histogram, multi_histogram
